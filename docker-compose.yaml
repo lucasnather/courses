@@ -1,0 +1,16 @@
+
+services:
+  postgresql:
+    image: 'bitnami/postgresql:latest'
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_DATABASE=courses
+      - POSTGRESQL_PASSWORD=essasenhaesecretaeeuseiquevoceestavendo
+      - POSTGRESQL_USERNAME=lnather
+    networks:
+      - courses
+
+networks:
+  courses:
+    driver: bridge
