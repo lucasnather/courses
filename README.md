@@ -2,7 +2,7 @@
 
 # Descrição
 
-<p>O Back-end de Cursos é um exercício da Rocketseat Java, esta API visa o aprendizado ne Java Spring, separando os aquicos em Controllers, Services, Repositories e Entities </p>
+<p>O Back-end de Cursos é um exercício da Rocketseat Java, esta API visa o aprendizado ne Java Spring, separando os arquivos em Controllers, Services, Repositories e Entities </p>
 
 # Tecnologias
 
@@ -46,7 +46,7 @@ $ Vá até o CoursesApplication.java e inicie o app ou "Shift + f10"
 
 <ul>
     <li>Metódo: POST</li>
-    <li>URL: http://localhost:8080/courses</li>
+    <li>URL: http://localhost:8080/api/courses</li>
     <li>Description: Cria Curso</li>
     <li>Response status: 201 CREATED</li>
     <li>Request Body:</li>
@@ -70,7 +70,7 @@ $ Vá até o CoursesApplication.java e inicie o app ou "Shift + f10"
 
 <ul>
     <li>Metódo: GET</li>
-    <li>URL: http://localhost:8080/courses</li>
+    <li>URL: http://localhost:8080/api/courses</li>
     <li>Description: lista todos os cursos cadastrados </li>
     <li>Response status: 200 OK</li>
     <li>Response Payload: </li>
@@ -94,7 +94,7 @@ $ Vá até o CoursesApplication.java e inicie o app ou "Shift + f10"
 
 <ul>
     <li>Metódo: DELETE</li>
-    <li>URL: http://localhost:8080/courses/{uuid}</li>
+    <li>URL: http://localhost:8080/api/courses/{uuid}</li>
     <li>Description: deletar curso por id </li>
     <li>Response status: 203</li>
     <li>Request Param: UUID</li>
@@ -113,7 +113,7 @@ $ Vá até o CoursesApplication.java e inicie o app ou "Shift + f10"
 
 <ul>
     <li>Metódo: Put</li>
-    <li>URL: http://localhost:8080/courses/{uuid}</li>
+    <li>URL: http://localhost:8080/api/courses/{uuid}</li>
     <li>Description: atualizar curso por id </li>
     <li>Response status: 203</li>
     <li>Request Param: UUID</li>
@@ -137,7 +137,7 @@ $ Vá até o CoursesApplication.java e inicie o app ou "Shift + f10"
 
 <ul>
     <li>Metódo: patch</li>
-    <li>URL: http://localhost:8080/courses/{uuid}/active</li>
+    <li>URL: http://localhost:8080/api/courses/{uuid}/active</li>
     <li>Description: atualizar curso para tivo por id </li>
     <li>Response status: 203</li>
     <li>Request Param: UUID</li>

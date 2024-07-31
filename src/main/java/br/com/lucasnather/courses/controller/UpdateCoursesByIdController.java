@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/courses")
+@RequestMapping("/api/courses")
 public class UpdateCoursesByIdController {
 
     @Autowired
