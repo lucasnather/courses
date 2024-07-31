@@ -19,7 +19,7 @@ public class UpdateCoursesIsActiveByIdController {
     @Autowired
     private UpdateCourseIsActiveByIdService updateCourseIsActiveByIdService;
 
-    @PatchMapping("/{id}")
+    @PatchMapping("/{id}/active")
     public ResponseEntity<Object> patch(@PathVariable("id") String id) {
 
         UUID stringIdToUuid = UUID.fromString(id);
