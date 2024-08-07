@@ -185,4 +185,8 @@ updatedAt
 
 <p>Como eu desenvolvi a aplicação passo a passo (Pastas).</p>
 
-<p>Entities -> Repository -> Service -> Controller </p>
+<p>Domain -> Entidades Base</p>
+<p>Application -> Gateways(Interfaces) e Casos de Uso</p>
+<p>Infra -> Controllers e Dtos, Persistence(Interface e Entidade Jpa), Gateways(Implementando as interfaces de persistence) </p>
+<p>Config -> Autorizando Classes para injetar as dependências</p>
+
