@@ -1,4 +1,4 @@
-package br.com.lucasnather.courses.entities;
+package br.com.lucasnather.courses.infra.persistence;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -11,6 +11,8 @@ import java.util.UUID;
 @Entity(name = "courses")
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class CoursesEntity {
 
     @Id
@@ -21,7 +23,7 @@ public class CoursesEntity {
     private String name;
 
     @Column(name = "category")
-    private String Category;
+    private String category;
 
     @Column(name = "is_active")
     private Boolean isActive;
@@ -34,4 +36,13 @@ public class CoursesEntity {
     @UpdateTimestamp
     private LocalDateTime updatedAt;
 
+    public CoursesEntity( UUID id, String name, String category, Boolean isActive, LocalDateTime createdAt) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.isActive = isActive;
+        this.createdAt = createdAt;
+    }
+
 }
+
